@@ -2461,6 +2461,39 @@
           gap: 8px;
         }
 
+        .detail-notes {
+          width: 100%;
+          max-width: none;
+        }
+
+        .video-notes {
+          overflow-x: visible;
+          overflow-y: visible;
+          padding-top: 0;
+          margin-top: 0;
+          display: grid;
+          gap: 10px;
+        }
+
+        .video-notes .video-note-line,
+        .video-notes .video-note-line--wrap,
+        .detail-notes p {
+          width: 100%;
+          max-width: 100%;
+          padding: 0 10px;
+          white-space: normal;
+          overflow: visible;
+          overflow-wrap: anywhere;
+          word-break: break-word;
+          text-wrap: pretty;
+        }
+
+        .video-notes .video-note-line,
+        .video-notes .video-note-line--wrap {
+          display: block;
+          line-height: 1.6;
+        }
+
         .detail-kicker {
           font-size: 11px;
           letter-spacing: 0.22em;
